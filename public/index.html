@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="기아 거제대리점 이재호의 1:1 신차 구매 상담 예약. 관심 차량, 구매 방식, 희망 일정을 선택하고 문자로 간편하게 문의하세요. 개인 상담용 페이지입니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="이재호 | 기아 차량 구매 1:1 상담">
+  <meta property="og:description" content="차량 선택부터 견적·구매 상담까지. 거제대리점 이재호 개인 상담 예약 페이지입니다.">
+  <meta property="og:image" content="./share-card.jpg">
+  <title>이재호 | 기아 차량 구매 1:1 상담 예약</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#18232c;--navy:#101a23;--navy2:#192735;--muted:#66717c;--accent:#b69669;--soft:#f6f7f7;--line:#e3e6e7;--bg:#fff;--green:#17715a;--shadow:0 22px 55px rgba(14,29,38,.09)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:85px}
+    body{margin:0;background:#f8f9fa;color:var(--ink);font-family:'DM Sans','Noto Sans KR',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',sans-serif;-webkit-font-smoothing:antialiased;line-height:1.55}
+    button,input,select,textarea{font:inherit}
+    button{cursor:pointer}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1140px,calc(100% - 52px));margin:0 auto}
+    .topbar{height:77px;background:rgba(16,26,35,.95);color:#fff;position:relative;z-index:3;border-bottom:1px solid rgba(255,255,255,.1)}
+    .topbar-in{height:100%;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:13px}
+    .brand-mark{font-weight:900;font-size:23px;letter-spacing:-2px;line-height:1;color:#fff;transform:scaleX(1.12);transform-origin:left center}
+    .brand-divider{height:21px;width:1px;background:#45505b;margin-left:9px}
+    .brand-caption{font-size:12px;color:#cbd2d7;letter-spacing:.02em}
+    .top-actions{display:flex;align-items:center;gap:12px}
+    .top-call{font-size:12px;color:#dfe4e8;font-weight:600;display:flex;align-items:center;gap:7px}
+    .top-reserve{border:1px solid rgba(255,255,255,.4);border-radius:3px;padding:10px 16px;font-size:12px;font-weight:800;transition:.2s}
+    .top-reserve:hover{background:white;color:#111}
+    .hero{background:radial-gradient(circle at 83% 27%,#2d3f4d 0,transparent 38%),linear-gradient(132deg,#121e29 0%,#101b25 59%,#24323d 100%);color:white;overflow:hidden;min-height:502px}
+    .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:16px;align-items:center;min-height:502px}
+    .hero-content{padding:64px 0 73px;position:relative;z-index:1}
+    .eyebrow{display:flex;align-items:center;gap:12px;color:#d1b184;font-size:11px;letter-spacing:.19em;font-weight:800}
+    .eyebrow:before{content:"";display:block;width:33px;height:1px;background:#cdb08a}
+    h1{font-size:clamp(34px,4.15vw,56px);line-height:1.23;letter-spacing:-.056em;font-weight:800;margin:23px 0 22px}
+    h1 .gold{color:#d1b184}
+    .hero-desc{font-size:14px;line-height:1.95;color:#c3cbd0;margin:0;word-break:keep-all}
+    .hero-desc strong{color:#fff;font-weight:700}
+    .hero-buttons{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+    .btn{border:0;padding:16px 25px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:3px;transition:.2s;font-size:13px;min-height:52px}
+    .btn-primary{background:#d1b184;color:#17212a}
+    .btn-primary:hover{background:#e0bf91;transform:translateY(-2px)}
+    .btn-outline{border:1px solid #65707a;color:white;background:transparent}
+    .btn-outline:hover{background:rgba(255,255,255,.08)}
+    .arrow{font-size:18px;font-weight:500;line-height:1}
+    .benefit-strip{background:white;border-bottom:1px solid var(--line)}
+    .benefits{display:grid;grid-template-columns:repeat(3,1fr);padding:24px 0}
+    .benefit{display:flex;gap:14px;align-items:center;justify-content:center;border-right:1px solid var(--line);min-width:0}
+    .benefit:last-child{border-right:0}
+    .benefit-icon{width:41px;height:41px;display:grid;place-items:center;border:1px solid #e5e7e7;border-radius:50%;color:#b18f62;flex-shrink:0}
+    .benefit b{font-size:12px;display:block}
+    .benefit span{font-size:10px;color:#7f8991;display:block;margin-top:2px}
+    .intro{text-align:center;padding:66px 0 36px}
+    .kicker{font-size:10px;color:#b39060;font-weight:800;letter-spacing:.2em}
+    h2{margin:10px 0;font-size:clamp(23px,2.8vw,34px);letter-spacing:-.055em;line-height:1.35}
+    .intro p{margin:10px 0 0;font-size:13px;color:#7d8790}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:30px auto 0;max-width:800px}
+    .step{display:flex;gap:10px;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#8b939a}
+    .step strong{background:#eef0f1;border:1px solid #e0e4e6;border-radius:50%;width:27px;height:27px;display:grid;place-items:center;font-size:11px;color:#656f77}
+    .step:first-child,.step.active{color:#18232c}
+    .step:first-child strong,.step.active strong{background:#192735;color:#fff;border-color:#192735}
+    .main-layout{display:grid;grid-template-columns:minmax(0,1fr) 304px;gap:22px;align-items:start;padding-bottom:90px}
+    .form-panel{background:#fff;border:1px solid #e8ebec;box-shadow:0 5px 18px rgba(8,22,31,.035)}
+    .section{padding:32px 35px;border-bottom:1px solid #e9ecee}
+    .section:last-child{border-bottom:0}
+    .section-head{display:flex;align-items:center;gap:12px;margin-bottom:25px}
+    .section-num{color:#b29165;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:800;letter-spacing:.08em;border:1px solid #e4d9c9;width:40px;height:40px;display:grid;place-items:center;flex-shrink:0}
+    .section-title{margin:0;font-size:18px;letter-spacing:-.045em;font-weight:800}
+    .section-sub{margin:3px 0 0;font-size:11px;color:#899199}
+    .field-label{display:block;font-size:12px;font-weight:800;margin:0 0 10px}
+    .required{color:#bc7c3c;margin-left:3px}
+    .field-hint{font-size:10px;color:#8d969d;margin-top:7px}
+    .categories{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+    .category{background:#fff;border:1px solid #e1e5e7;font-size:11px;color:#68747e;border-radius:3px;padding:8px 13px;font-weight:700}
+    .category[aria-pressed="true"]{background:#1b2a35;color:#fff;border-color:#1b2a35}
+    .models{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}
+    .model{min-height:48px;background:white;border:1px solid #dfe4e6;color:#4b5863;padding:10px 6px;border-radius:3px;font-size:12px;font-weight:700;transition:.18s;word-break:keep-all}
+    .model:hover{border-color:#b4bfc4;background:#fafafa}
+    .model[aria-pressed="true"]{background:#f3eee6;border-color:#b99b74;color:#17232d;box-shadow:inset 0 0 0 1px #b99b74}
+    .other-model{display:none;margin-top:12px}
+    .other-model.visible{display:block}
+    .grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+    /* Appointment controls: prevent the native date picker and time menu from overflowing their grid cells. */
+    .schedule-grid .field{min-width:0}
+    .schedule-grid #consultDate,.schedule-grid #consultTime{display:block;width:100%;min-width:0;max-width:100%;box-sizing:border-box}
+    .schedule-grid #consultDate::-webkit-date-and-time-value{text-align:left;min-height:1em}
+    @media(max-width:900px){.schedule-grid{grid-template-columns:minmax(0,1fr);gap:16px}.schedule-grid .field,.schedule-grid .field:last-child{margin:0}}
+    @media(max-width:720px){.schedule-grid #consultDate,.schedule-grid #consultTime{font-size:16px;min-height:52px}.schedule-grid #consultTime{height:52px}}
+    .field{min-width:0;margin-bottom:20px}
+    .field:last-child{margin-bottom:0}
+    .select,input[type="text"],input[type="tel"],input[type="date"],textarea{display:block;width:100%;border:1px solid #dce1e3;background:white;color:#26313b;border-radius:3px;padding:13px 12px;font-size:12px;min-height:46px;outline:none;transition:.2s}
+    select{appearance:none;padding:13px 34px 13px 12px;width:100%;height:46px;border:1px solid #dce1e3;background-color:white;color:#26313b;border-radius:3px;font-size:12px;outline:none;background-image:url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="%236e7982" stroke-width="1.6"%3E%3Cpath d="m5 9 7 7 7-7"/%3E%3C/svg%3E');background-repeat:no-repeat;background-position:calc(100% - 12px) center}
+    textarea{resize:vertical;min-height:92px}
+    input:focus,select:focus,textarea:focus{border-color:#b99b74;box-shadow:0 0 0 3px rgba(185,155,116,.13)}
+    input::placeholder,textarea::placeholder{color:#a6aeb3}
+    .pills{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .pill{position:relative;cursor:pointer}
+    .pill input{position:absolute;opacity:0;pointer-events:none}
+    .pill span{display:grid;place-items:center;text-align:center;min-height:46px;padding:9px 8px;border:1px solid #dfe4e6;border-radius:3px;color:#66727b;font-size:11px;font-weight:700;background:white;transition:.16s}
+    .pill input:checked+span{background:#f3eee6;border-color:#b99b74;color:#1b2a35;box-shadow:inset 0 0 0 1px #b99b74}
+    .pill input:focus-visible+span{outline:2px solid #b99b74;outline-offset:2px}
+    .info-box{border:1px solid #ece6dd;background:#fbf8f4;color:#77644b;padding:13px 15px;font-size:11px;line-height:1.8;margin-top:12px}
+    .consent{display:flex;align-items:flex-start;gap:11px;cursor:pointer;font-size:11px;color:#54616b;line-height:1.8;margin-top:8px}
+    .consent input{margin-top:5px;accent-color:#1d2d39;width:16px;height:16px;flex:none}
+    .consent b{color:#1d2d39}
+    .form-submit{background:#f8f9f9;padding:28px 35px 33px}
+    .submit{width:100%;background:#1a2a36;color:#fff;border:0;border-radius:3px;min-height:56px;font-size:14px;font-weight:800;display:flex;justify-content:center;align-items:center;gap:11px}
+    .submit:hover{background:#2d4050}
+    .submit svg{width:18px;height:18px}
+    .sub-actions{display:flex;justify-content:center;gap:20px;margin-top:14px;flex-wrap:wrap}
+    .text-btn{background:none;border:0;color:#596773;font-size:11px;text-decoration:underline;text-underline-offset:4px;font-weight:700}
+    .send-note{text-align:center;color:#8b949c;font-size:10px;line-height:1.7;margin:13px 0 0}
+    .sidebar{position:sticky;top:20px}
+    .advisor-card{background:#172632;color:#fff;padding:29px 27px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+    .advisor-card:after{content:"";position:absolute;width:190px;height:190px;border:1px solid rgba(209,177,132,.12);border-radius:50%;right:-75px;top:-85px}
+    .advisor-label{font-size:10px;color:#c9ad81;letter-spacing:.18em;font-weight:800}
+    .advisor-name{font-size:28px;font-weight:800;letter-spacing:-.055em;margin:10px 0 3px}
+    .advisor-name small{font-size:14px;font-weight:500;color:#d5dbe0}
+    .advisor-desc{font-size:11px;color:#b1bbc2;line-height:1.8;margin:0 0 22px}
+    .advisor-sep{border-top:1px solid #3b4954;margin:0 0 18px}
+    .advisor-line{display:flex;align-items:center;gap:12px;font-size:12px;margin:12px 0}
+    .advisor-line svg{opacity:.8;flex:none}
+    .advisor-phone{font-family:'DM Sans',sans-serif;font-size:17px;font-weight:800;letter-spacing:.02em}
+    .call-link{display:flex;align-items:center;justify-content:center;background:#d2b48a;color:#18242e;margin-top:20px;padding:13px;border-radius:2px;font-size:11px;font-weight:800}
+    .call-link:hover{background:#e3c9a0}
+    .side-title{font-size:13px;font-weight:800;margin:0 0 15px}
+    .ref-box{background:#f2f4f3;border:1px solid #e5e9e8;margin-top:15px;padding:22px}
+    .ref-box p{margin:8px 0 14px;color:#7a858d;font-size:11px;line-height:1.8}
+    .ref-btn{background:transparent;border:1px solid #cdd5d9;border-radius:3px;width:100%;padding:11px;color:#27343e;font-weight:800;font-size:11px}
+    .ref-btn:hover{background:white}
+    .footer{background:#111b25;color:#a7b0b8;padding:46px 0 36px}
+    .footer-in{display:flex;justify-content:space-between;gap:25px;align-items:flex-start}
+    .footer-brand{font-size:23px;letter-spacing:-1px;font-weight:900;color:#fff;margin:0}
+    .footer small{display:block;font-size:10px;line-height:2.1;margin-top:9px}
+    .footer strong{color:#f0f2f4;font-weight:700}
+    .footer-note{max-width:450px;font-size:10px;line-height:2;color:#acb6bd}
+    .footer-note b{color:#fff}
+    .footer-link{display:inline-block;font-size:10px;color:#d2b48a;text-decoration:underline;margin-top:7px}
+    .toaster{position:fixed;left:50%;bottom:30px;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#172632;color:white;border-radius:6px;padding:12px 20px;z-index:100;font-size:12px;box-shadow:var(--shadow);transition:.25s;max-width:calc(100vw - 36px);text-align:center}
+    .toaster.visible{opacity:1;transform:translate(-50%,0)}
+    .mobile-bottom{display:none}
+    .modal{position:fixed;inset:0;background:rgba(5,15,24,.62);z-index:150;display:none;align-items:center;justify-content:center;padding:18px}
+    .modal.visible{display:flex}
+    .modal-dialog{width:min(100%,515px);background:white;padding:28px;box-shadow:0 15px 65px rgba(0,0,0,.2);max-height:90vh;overflow-y:auto}
+    .modal-heading{display:flex;justify-content:space-between;align-items:center;gap:10px;font-weight:800;font-size:19px}
+    .close{border:0;background:#f0f2f3;font-size:24px;color:#54636e;width:35px;height:35px;line-height:1}
+    .modal-dialog p{font-size:12px;color:#5e6d75;line-height:1.9}
+    .msg-preview{background:#f7f8f9;border:1px solid #e7eaec;color:#25323b;white-space:pre-wrap;word-break:break-word;padding:18px;font-size:11px;line-height:1.85;margin:17px 0;max-height:300px;overflow:auto}
+    .modal-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .modal-actions button{border:0;border-radius:2px;padding:14px 10px;font-size:12px;font-weight:800;background:#e7eaeb;color:#273540}
+    .modal-actions button:last-child{background:#1c2d3a;color:white}
+    .modal-small{font-size:10px;color:#89949b;margin-top:13px;line-height:1.8}
+    @media(max-width:900px){.hero-grid{grid-template-columns:1.06fr .94fr}.main-layout{grid-template-columns:minmax(0,1fr) 245px;gap:14px}.section{padding:27px 24px}.advisor-card{padding:25px 18px}.side-box{padding:20px 16px}.hero-art svg{width:140%}.models{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:720px){.container{width:min(100% - 34px,560px)}.topbar{height:66px}.brand-caption{font-size:11px}.top-call{display:none}.top-reserve{font-size:10px;padding:10px}.hero{min-height:0}.hero-grid{display:flex;flex-direction:column;align-items:stretch;gap:0;min-height:0}.hero-content{padding:43px 0 0}.hero-art{min-height:206px;height:206px;overflow:hidden}.hero-art svg{width:92%;transform:translate(12px,-12px)}.halo{width:330px;height:330px;top:-69px;right:0}.art-note{bottom:17px;right:11px;font-size:8px}.hero-desc{font-size:12px}.hero-buttons{margin-top:23px}.btn{min-height:46px;padding:12px 16px;font-size:11px}.benefits{padding:18px 0;gap:6px}.benefit{gap:7px;flex-direction:column;text-align:center;justify-content:flex-start}.benefit-icon{width:34px;height:34px}.benefit-icon svg{width:18px}.benefit b{font-size:10px;word-break:keep-all}.benefit span{font-size:9px}.intro{padding:48px 0 26px}.intro p{font-size:11px}.steps{margin-top:23px;gap:0}.step{flex-direction:column;gap:5px;font-size:9px}.step strong{width:24px;height:24px;font-size:10px}.main-layout{grid-template-columns:1fr;gap:18px;padding-bottom:56px}.sidebar{position:static;display:grid;grid-template-columns:1fr;gap:12px}.advisor-card{order:1;padding:22px}.side-box{order:0;margin-top:0}.ref-box{order:2;margin-top:0}.section{padding:26px 21px}.form-submit{padding:23px 21px 28px}.grid2{gap:11px}.models{grid-template-columns:repeat(3,1fr)}.footer-in{flex-direction:column}.footer{padding:36px 0 75px}.mobile-bottom{display:flex;position:fixed;z-index:15;bottom:0;left:0;right:0;background:rgba(255,255,255,.97);border-top:1px solid #e2e7e9;padding:10px 17px max(10px,env(safe-area-inset-bottom));gap:10px}.mobile-bottom a{display:grid;place-items:center;min-height:45px;font-size:12px;font-weight:800}.mobile-bottom a:first-child{border:1px solid #d6dddf;flex:0 0 90px}.mobile-bottom a:last-child{background:#162632;color:white;flex:1}}
+    @media(max-width:385px){.brand-divider{margin-left:3px}.brand-caption{font-size:10px}.brand-mark{font-size:21px}.container{width:calc(100% - 26px)}.grid2{grid-template-columns:1fr}.pill span{font-size:10px}.section{padding:22px 16px}.hero-art{min-height:176px;height:176px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+    /* Refined minimal layout: no vehicle illustration or decorative sales strip */
+    .hero{background:#fff;color:var(--ink);min-height:0;border-bottom:1px solid var(--line)}
+    .hero-grid{display:block;min-height:0}
+    .hero-content{padding:55px 0 52px;max-width:820px}
+    .eyebrow{color:#6c777e;font-size:11px;letter-spacing:.02em;font-weight:700;gap:9px}
+    .eyebrow:before{width:17px;background:#b69b78}
+    .hero h1{margin:15px 0 15px;font-size:clamp(35px,4.3vw,51px);letter-spacing:-.052em;line-height:1.28}
+    .hero h1 .gold{color:#986f40}
+    .hero-desc{color:#65717a;line-height:1.85;font-size:13px}
+    .hero-desc strong{color:#26323b}
+    .hero-buttons{margin-top:26px}
+    .hero .btn-primary{background:#182934;color:#fff}
+    .hero .btn-primary:hover{background:#314554}
+    .hero .btn-outline{border:1px solid #ccd4d8;color:#1c2c36;background:#fff}
+    .hero .btn-outline:hover{background:#f5f7f8}
+    .hero-footnote{margin:21px 0 0;color:#88929a;font-size:10px;word-break:keep-all}
+    .intro{padding:45px 0 28px}
+    .models{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+    .model{font-size:11px;padding:12px 7px;min-height:43px}
+    .category{border-radius:30px;padding:8px 12px;font-size:11px}
+    .category[aria-pressed="true"]{background:#243643;border-color:#243643}
+    .search-label{display:block;font-size:11px;font-weight:800;margin-bottom:8px}
+    .model-search{display:block;width:100%;background:#fff;border:1px solid #dce1e3;border-radius:3px;font-size:12px;min-height:45px;padding:10px 13px;outline:none}
+    .model-search:focus{border-color:#b99b74;box-shadow:0 0 0 3px rgba(185,155,116,.13)}
+    .model-meta{font-size:10px;color:#879198;margin:12px 0 8px}
+    .no-model{font-size:11px;color:#889199;grid-column:1/-1;padding:18px 7px;text-align:center;background:#f8f9fa}
+    .ref-box{scroll-margin-top:80px}
+    .share-label{display:block;font-size:11px;font-weight:700;margin:11px 0 7px}
+    .share-input{width:100%;border:1px solid #dce1e3;padding:11px 12px;background:#fff;font-size:12px;outline:none;margin:0 0 10px}
+    .ref-box .ref-btn{display:block;margin-top:8px;line-height:1.5}
+    .ref-box .ref-btn-primary{background:#213340;color:#fff;border-color:#213340}
+    .ref-box .ref-btn-primary:hover{background:#3a5260}
+    .ref-box .share-note{color:#929ba2;font-size:10px;line-height:1.75;margin-bottom:0}
+    /* Two-stage vehicle chooser: category cards -> matching model list. */
+    .category-instruction{margin:-2px 0 15px;font-size:11px;color:#65727b;line-height:1.7;word-break:keep-all}
+    .categories{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-bottom:19px}
+    .category{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;text-align:left;min-width:0;min-height:65px;padding:11px 13px;border:1px solid #dfe5e7;border-radius:5px;background:#fff;color:#273642;transition:background .16s,border-color .16s,box-shadow .16s}
+    .category-name{font-size:12px;font-weight:800;line-height:1.5;word-break:keep-all}
+    .category-quantity{font-size:10px;color:#8d989e;font-weight:600;margin-top:3px}
+    .category:hover{background:#f7f9fa;border-color:#a5b1b7}
+    .category[aria-pressed="true"]{background:#192d3a;border-color:#192d3a;color:white;box-shadow:0 3px 9px rgba(9,25,37,.09)}
+    .category[aria-pressed="true"] .category-quantity{color:#d8e2e8}
+    .category:focus-visible,.model:focus-visible{outline:2px solid #bd9c70;outline-offset:2px}
+    .category-all{grid-column:span 3;min-height:48px;flex-direction:row;align-items:center;justify-content:center;gap:12px;background:#fafbfb}
+    .category-all .category-quantity{margin-top:0}
+    .search-label{margin-bottom:7px}
+    .models-panel{margin-top:16px;border:1px solid #e1e6e8;background:#fafbfb;border-radius:5px;padding:18px 16px 17px}
+    .models-panel-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;min-width:0;margin-bottom:15px}
+    .models-step{font-size:10px;color:#ae8e64;font-weight:800;margin-bottom:4px}
+    .models-panel h4{font-size:15px;letter-spacing:-.035em;line-height:1.45;margin:0 0 3px;color:#243440}
+    .models-panel p{font-size:10px;line-height:1.65;margin:0;color:#7b878f}
+    .models-count{font-size:10px;flex-shrink:0;white-space:nowrap;color:#73808a;background:white;padding:5px 8px;border:1px solid #e3e7e9;border-radius:20px}
+    .models-placeholder{color:#809099;text-align:center;font-size:11px;background:#fff;border:1px dashed #d8e0e4;border-radius:4px;padding:24px 10px;word-break:keep-all}
+    .models-panel .model{background:#fff;min-height:46px;font-size:12px;border-radius:4px}
+    .models-panel .model[aria-pressed="true"]{background:#eee8dc;border-color:#b69a73;color:#182935}
+    .models-selected{margin-top:12px;color:#275b4e;border:1px solid #cbded6;background:#f1f8f4;border-radius:4px;padding:10px 12px;font-size:11px;font-weight:800}
+    .models-panel [hidden]{display:none!important}
+    @media(max-width:720px){.categories{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.category{min-height:62px;padding:10px 12px}.category-name{font-size:11px}.category-all{grid-column:span 2}.models-panel{padding:15px 12px}.models-panel h4{font-size:14px}.models-panel-head{gap:7px}.models-count{font-size:9px}}
+    @media(max-width:360px){.category-name{font-size:10px}.category{padding:9px 10px}.models-count{padding:4px 6px}}
+    @media(max-width:900px){.models{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media(max-width:720px){
+      .hero{min-height:0}
+      .hero-grid{display:block;min-height:0}
+      .hero-content{padding:35px 0 34px}
+      .hero-desc{font-size:12px}
+      .hero-buttons{margin-top:20px}
+      .hero .btn{font-size:11px;min-height:46px}
+      .hero-footnote{margin-top:16px}
+      .intro{padding:38px 0 23px}
+      .models{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .categories{gap:7px}
+      .category{padding:7px 11px}
+    }
+    @media(max-width:720px){.categories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.category{padding:10px 12px;border-radius:5px}.category-all{grid-column:span 2}}
+
+    /* Reliable two-step selector: native details/summary, no JS required to expand. */
+    .vehicle-chooser{display:grid;gap:9px}
+    .vehicle-category{border:1px solid #dde4e6;background:#fff;border-radius:6px;overflow:hidden}
+    .vehicle-category summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;min-height:56px;padding:13px 16px;background:#fff;user-select:none;-webkit-tap-highlight-color:transparent}
+    .vehicle-category summary::-webkit-details-marker{display:none}
+    .vehicle-category summary::marker{content:''}
+    .vehicle-category summary:focus-visible{outline:3px solid #b49b75;outline-offset:-3px}
+    .vehicle-category[open]{border-color:#9daeb9;box-shadow:0 5px 18px rgba(15,39,51,.06)}
+    .vehicle-category[open] summary{color:#fff;background:#1d303e}
+    .vehicle-category-title{font-size:13px;letter-spacing:-.02em;font-weight:800;flex:1}
+    .vehicle-category[open]
+    .vehicle-category-chevron{display:block;width:9px;height:9px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);margin:0 3px 5px 6px;color:#8d9aa2;flex-shrink:0}
+    .vehicle-category[open] .vehicle-category-chevron{transform:rotate(225deg);margin-top:8px;margin-bottom:0;color:#fff}
+    .vehicle-category-body{padding:14px;background:#f8fafb;border-top:1px solid #dce5e9}
+    .vehicle-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+    .vehicle-choice{display:flex;align-items:center;gap:7px;background:#fff;border:1px solid #dce3e6;border-radius:4px;padding:12px 9px;min-height:46px;font-size:12px;font-weight:700;color:#394854;cursor:pointer;min-width:0;word-break:keep-all}
+    .vehicle-choice input{flex:0 0 auto;width:15px;height:15px;accent-color:#1d303e;margin:0}
+    .vehicle-choice span{overflow-wrap:anywhere}
+    .vehicle-choice:has(input:checked){border-color:#a98b62;background:#f4eee5;color:#182a36;box-shadow:inset 0 0 0 1px #a98b62}
+    .manual-vehicle{margin-top:17px}
+    .manual-vehicle input{width:100%;border:1px solid #dce1e3;border-radius:4px;min-height:46px;padding:12px;background:#fff;color:#26313b;font-size:13px}
+    .vehicle-selection-status{margin:15px 0 0;padding:12px 13px;border:1px solid #e2e6e8;border-radius:4px;background:#f8fafb;font-size:12px;color:#687680;font-weight:700}
+    .vehicle-selection-status.has-selection{background:#f1f8f4;border-color:#cbddd3;color:#245643}
+    .script-note{margin:15px 0 0;padding:12px;background:#fff3e7;color:#6c502b;font-size:12px}
+    @media(max-width:720px){.vehicle-category summary{min-height:55px;padding:12px 13px}.vehicle-options{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.vehicle-choice{min-height:48px;font-size:11px;padding:11px 8px}.vehicle-category-body{padding:11px}}
+    @media(max-width:350px){.vehicle-options{grid-template-columns:1fr}.vehicle-choice{font-size:12px}}
+    /* Do not let a fixed mobile CTA cover the vehicle category selector. */
+    @media(max-width:720px){.mobile-bottom{position:static;bottom:auto;padding:13px 17px max(13px,env(safe-area-inset-bottom))}.footer{padding-bottom:26px}}
+    /* Corporate wordmark at text scale, replacing the decorative leading rule. */
+    .eyebrow::before{content:none!important;display:none!important}
+    .brand-logo{display:block;width:70px;height:19px;color:#fff;flex-shrink:0}
+    .eyebrow-logo{display:block;width:46px;height:12px;color:#243440;flex:none}
+    .eyebrow{gap:10px;flex-wrap:wrap}
+    .catalog-note{font-size:10px;line-height:1.7;color:#818b92;margin:13px 0 0;word-break:keep-all}
+    @media(max-width:385px){.brand-logo{width:59px;height:16px}.eyebrow-logo{width:42px;height:11px}.eyebrow{gap:7px}}
+
+
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-in">
+      <a href="#top" class="brand" aria-label="상단으로 이동"><svg class="brand-logo" role="img" aria-label="기아 로고" viewBox="0 8.9 24 6" xmlns="http://www.w3.org/2000/svg" focusable="false"><path fill="currentColor" d="M13.923 14.175c0 .046.015.072.041.072a.123.123 0 0 0 .058-.024l7.48-4.854a.72.72 0 0 1 .432-.13h1.644c.252 0 .422.168.422.42v3.139c0 .38-.084.6-.42.801l-1.994 1.2a.137.137 0 0 1-.067.024c-.024 0-.048-.019-.048-.088v-3.663c0-.043-.012-.071-.041-.071a.113.113 0 0 0-.058.024l-5.466 3.551a.733.733 0 0 1-.42.127h-3.624c-.254 0-.422-.168-.422-.422V9.757c0-.033-.015-.064-.044-.064a.118.118 0 0 0-.057.024L7.732 11.88c-.036.024-.046.041-.046.058 0 .014.008.029.032.055l2.577 2.575c.034.034.058.06.058.089 0 .024-.039.043-.084.043H7.94c-.183 0-.324-.026-.423-.125l-1.562-1.56a.067.067 0 0 0-.048-.024.103.103 0 0 0-.048.015l-2.61 1.57a.72.72 0 0 1-.423.122H.425C.168 14.7 0 14.53 0 14.279v-3.08c0-.38.084-.6.422-.8L2.43 9.192a.103.103 0 0 1 .052-.016c.032 0 .048.03.048.1V13.4c0 .043.01.063.041.063a.144.144 0 0 0 .06-.024L9.407 9.36a.733.733 0 0 1 .446-.124h3.648c.252 0 .422.168.422.42l-.002 4.518z"/></svg><span class="brand-divider"></span><span class="brand-caption">거제대리점 · 이재호 개인 상담</span></a>
+      <div class="top-actions"><a class="top-call" href="tel:01045530930">☎ &nbsp;010-4553-0930</a><a class="top-reserve" href="#reservation">상담 신청하기 ↗</a></div>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow"><svg class="eyebrow-logo" role="img" aria-label="기아 로고" viewBox="0 8.9 24 6" xmlns="http://www.w3.org/2000/svg" focusable="false"><path fill="currentColor" d="M13.923 14.175c0 .046.015.072.041.072a.123.123 0 0 0 .058-.024l7.48-4.854a.72.72 0 0 1 .432-.13h1.644c.252 0 .422.168.422.42v3.139c0 .38-.084.6-.42.801l-1.994 1.2a.137.137 0 0 1-.067.024c-.024 0-.048-.019-.048-.088v-3.663c0-.043-.012-.071-.041-.071a.113.113 0 0 0-.058.024l-5.466 3.551a.733.733 0 0 1-.42.127h-3.624c-.254 0-.422-.168-.422-.422V9.757c0-.033-.015-.064-.044-.064a.118.118 0 0 0-.057.024L7.732 11.88c-.036.024-.046.041-.046.058 0 .014.008.029.032.055l2.577 2.575c.034.034.058.06.058.089 0 .024-.039.043-.084.043H7.94c-.183 0-.324-.026-.423-.125l-1.562-1.56a.067.067 0 0 0-.048-.024.103.103 0 0 0-.048.015l-2.61 1.57a.72.72 0 0 1-.423.122H.425C.168 14.7 0 14.53 0 14.279v-3.08c0-.38.084-.6.422-.8L2.43 9.192a.103.103 0 0 1 .052-.016c.032 0 .048.03.048.1V13.4c0 .043.01.063.041.063a.144.144 0 0 0 .06-.024L9.407 9.36a.733.733 0 0 1 .446-.124h3.648c.252 0 .422.168.422.42l-.002 4.518z"/></svg><span>거제대리점 · 개인 차량 상담</span></div>
+          <h1>차량 상담,<br><span class="gold">쉽고 편리하게.</span></h1>
+          <p class="hero-desc"><strong>이재호 상담사</strong>와 함께 관심 차종, 견적, 구매 방법을 알아보세요.<br>희망 일정을 입력한 뒤 문자로 상담을 신청할 수 있습니다.</p>
+          <div class="hero-buttons">
+            <a href="#reservation" class="btn btn-primary">상담 예약하기 <span class="arrow">→</span></a>
+            <button type="button" class="btn btn-outline" id="shareTop">상담 링크 문자 공유 <span class="arrow">↗</span></button>
+          </div>
+          <p class="hero-footnote">이 페이지는 기아 공식 예약 시스템이 아닌 이재호 상담사의 개인 상담용 페이지입니다.</p>
+        </div>
+      </div>
+    </section>
+    <section class="container intro" id="reservation">
+      <div class="kicker">RESERVATION</div><h2>1:1 차량 상담 신청</h2><p>관심 차량과 상담 내용을 선택해 주세요. 문자 앱에서 직접 전송하시면 신청됩니다.</p>
+      <div class="steps" aria-label="예약 절차"><div class="step active"><strong>01</strong>관심 차량</div><div class="step"><strong>02</strong>상담 내용</div><div class="step"><strong>03</strong>희망 일정</div><div class="step"><strong>04</strong>문자 전송</div></div>
+    </section>
+    <div class="container main-layout">
+      <form id="consultForm" class="form-panel" novalidate>
+        <div class="section">
+          <div class="section-head"><span class="section-num">01</span><div><h3 class="section-title">관심 차량 선택</h3><p class="section-sub">상담받고 싶은 차종을 선택해 주세요.</p></div></div>
+          <div class="field-label">1. 차량 유형 선택 <span class="required">*</span></div>
+          <p class="category-instruction">차량 유형을 누른 뒤 원하시는 차종을 선택해 주세요.</p>
+          <div class="vehicle-chooser" id="vehicleChooser">
+            <details class="vehicle-category" name="vehicleTypes" data-category="sedan">
+              <summary><span class="vehicle-category-title">승용 · 경차</span><span class="vehicle-category-chevron" aria-hidden="true"></span></summary>
+              <div class="vehicle-category-body"><div class="vehicle-options" role="group" aria-label="승용 · 경차 상세 차량">
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="모닝"><span>모닝</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="레이"><span>레이</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="K5"><span>K5</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="K8"><span>K8</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="K9"><span>K9</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="미정 · 추천받기"><span>미정 · 추천받기</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="다른 모델 직접 입력"><span>다른 모델 직접 입력</span></label>
+              </div></div>
+            </details>
+            <details class="vehicle-category" name="vehicleTypes" data-category="suv">
+              <summary><span class="vehicle-category-title">SUV · RV</span><span class="vehicle-category-chevron" aria-hidden="true"></span></summary>
+              <div class="vehicle-category-body"><div class="vehicle-options" role="group" aria-label="SUV · RV 상세 차량">
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="셀토스"><span>셀토스</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="니로"><span>니로</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="스포티지"><span>스포티지</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="쏘렌토"><span>쏘렌토</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="타스만"><span>타스만</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="카니발"><span>카니발</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="카니발 하이리무진"><span>카니발 하이리무진</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="미정 · 추천받기"><span>미정 · 추천받기</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="다른 모델 직접 입력"><span>다른 모델 직접 입력</span></label>
+              </div></div>
+            </details>
+            <details class="vehicle-category" name="vehicleTypes" data-category="ev">
+              <summary><span class="vehicle-category-title">전기차 (EV)</span><span class="vehicle-category-chevron" aria-hidden="true"></span></summary>
+              <div class="vehicle-category-body"><div class="vehicle-options" role="group" aria-label="전기차 (EV) 상세 차량">
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="레이 EV"><span>레이 EV</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="EV3"><span>EV3</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="EV3 GT"><span>EV3 GT</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="EV4"><span>EV4</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="EV4 GT"><span>EV4 GT</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="EV5"><span>EV5</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="EV5 GT"><span>EV5 GT</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="EV6"><span>EV6</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="EV6 GT"><span>EV6 GT</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="EV9"><span>EV9</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="EV9 GT"><span>EV9 GT</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="봉고Ⅲ EV"><span>봉고Ⅲ EV</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="봉고Ⅲ EV 탑차/윙바디"><span>봉고Ⅲ EV 탑차/윙바디</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="봉고Ⅲ EV 파워게이트"><span>봉고Ⅲ EV 파워게이트</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="미정 · 추천받기"><span>미정 · 추천받기</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="다른 모델 직접 입력"><span>다른 모델 직접 입력</span></label>
+              </div></div>
+            </details>
+            <details class="vehicle-category" name="vehicleTypes" data-category="pbv">
+              <summary><span class="vehicle-category-title">PBV</span><span class="vehicle-category-chevron" aria-hidden="true"></span></summary>
+              <div class="vehicle-category-body"><div class="vehicle-options" role="group" aria-label="PBV 상세 차량">
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="PV5 패신저"><span>PV5 패신저</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="PV5 카고 롱"><span>PV5 카고 롱</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="PV5 카고 컴팩트"><span>PV5 카고 컴팩트</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="PV5 WAV"><span>PV5 WAV</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="PV5 프라임"><span>PV5 프라임</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="PV5 오픈베드"><span>PV5 오픈베드</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="미정 · 추천받기"><span>미정 · 추천받기</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="다른 모델 직접 입력"><span>다른 모델 직접 입력</span></label>
+              </div></div>
+            </details>
+            <details class="vehicle-category" name="vehicleTypes" data-category="commercial">
+              <summary><span class="vehicle-category-title">상용 · 택시</span><span class="vehicle-category-chevron" aria-hidden="true"></span></summary>
+              <div class="vehicle-category-body"><div class="vehicle-options" role="group" aria-label="상용 · 택시 상세 차량">
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="K8 택시"><span>K8 택시</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="PV5 패신저 택시 2-3-0"><span>PV5 패신저 택시 2-3-0</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="PV5 패신저 택시 1-2-2"><span>PV5 패신저 택시 1-2-2</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="PV5 WAV 택시"><span>PV5 WAV 택시</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="봉고Ⅲ 트럭"><span>봉고Ⅲ 트럭</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="타스만 오픈베드"><span>타스만 오픈베드</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="봉고Ⅲ 탑차/윙바디/워크스루밴"><span>봉고Ⅲ 탑차/윙바디/워크스루밴</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="봉고Ⅲ 덤프"><span>봉고Ⅲ 덤프</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="봉고Ⅲ 파워게이트"><span>봉고Ⅲ 파워게이트</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="봉고Ⅲ EV"><span>봉고Ⅲ EV</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="봉고Ⅲ EV 탑차/윙바디"><span>봉고Ⅲ EV 탑차/윙바디</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="봉고Ⅲ EV 파워게이트"><span>봉고Ⅲ EV 파워게이트</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="그랜버드"><span>그랜버드</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="미정 · 추천받기"><span>미정 · 추천받기</span></label>
+                <label class="vehicle-choice"><input type="radio" name="vehicleModel" value="다른 모델 직접 입력"><span>다른 모델 직접 입력</span></label>
+              </div></div>
+            </details>
+          </div>
+          <div class="manual-vehicle"><label class="field-label" for="customModel">직접 입력 (목록에 없는 차량 선택 시)</label><input type="text" id="customModel" maxlength="50" placeholder="예: 관심 차종 또는 트림명"><p class="field-hint">차종 목록에 없는 특장·전환 모델은 ‘다른 모델 직접 입력’에서 문의해 주세요.</p></div>
+          <p class="vehicle-selection-status" id="vehicleSelected" role="status" aria-live="polite">아직 선택한 차량이 없습니다.</p>
+          <noscript><p class="script-note">차종 목록은 선택할 수 있지만, 문자 예약 작성은 자바스크립트가 허용된 Safari 또는 Chrome 브라우저에서 진행해 주세요.</p></noscript>
+        </div>
+        <div class="section">
+          <div class="section-head"><span class="section-num">02</span><div><h3 class="section-title">상담 내용</h3><p class="section-sub">원하시는 상담 주제를 알려 주세요.</p></div></div>
+          <div class="field"><div class="field-label">주요 상담 목적 <span class="required">*</span></div>
+            <div class="pills" id="purposePills">
+              <label class="pill"><input type="radio" name="purpose" value="신차 구매 상담" checked><span>신차 구매 상담</span></label>
+              <label class="pill"><input type="radio" name="purpose" value="견적 · 혜택 문의"><span>견적 · 혜택</span></label>
+              <label class="pill"><input type="radio" name="purpose" value="시승 문의"><span>시승 문의</span></label>
+              <label class="pill"><input type="radio" name="purpose" value="법인 · 사업자 구매"><span>법인 · 사업자</span></label>
+              <label class="pill"><input type="radio" name="purpose" value="출고 · 재고 문의"><span>출고 · 재고</span></label>
+              <label class="pill"><input type="radio" name="purpose" value="기타 상담"><span>기타 상담</span></label>
+            </div>
+          </div>
+          <div class="grid2">
+            <div class="field"><label class="field-label" for="purchaseTime">구매 예정 시기</label><select id="purchaseTime"><option value="상담 후 결정">상담 후 결정</option><option value="즉시 ~ 1개월">즉시 ~ 1개월</option><option value="1 ~ 3개월">1 ~ 3개월</option><option value="3 ~ 6개월">3 ~ 6개월</option><option value="6개월 이후">6개월 이후</option></select></div>
+            <div class="field"><label class="field-label" for="finance">관심 구매 방식</label><select id="finance"><option value="상담 후 결정">상담 후 결정</option><option value="현금 구매">현금 구매</option><option value="할부 구매">할부 구매</option><option value="리스 · 렌트 문의">리스 · 렌트 문의</option></select></div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section-head"><span class="section-num">03</span><div><h3 class="section-title">희망 상담 일정</h3><p class="section-sub">원하시는 날짜와 시간을 선택해 주세요.</p></div></div>
+          <div class="grid2 schedule-grid">
+            <div class="field"><label class="field-label" for="consultDate">희망 날짜 <span class="required">*</span></label><input id="consultDate" type="date" required></div>
+            <div class="field"><label class="field-label" for="consultTime">희망 시간 <span class="required">*</span></label><select id="consultTime" name="consultTime" required aria-describedby="consultTimeHint"><option value="" disabled selected>희망 시간을 선택하세요</option><option value="09:00">오전 9시 (09:00)</option><option value="10:00">오전 10시 (10:00)</option><option value="11:00">오전 11시 (11:00)</option><option value="12:00">오후 12시 (12:00)</option><option value="13:00">오후 1시 (13:00)</option><option value="14:00">오후 2시 (14:00)</option><option value="15:00">오후 3시 (15:00)</option><option value="16:00">오후 4시 (16:00)</option><option value="17:00">오후 5시 (17:00)</option><option value="18:00">오후 6시 (18:00)</option><option value="19:00">오후 7시 (19:00)</option><option value="20:00">오후 8시 (20:00)</option><option value="21:00">오후 9시 (21:00)</option></select><div class="field-hint" id="consultTimeHint">오전 9시~오후 9시 · 1시간 단위로 선택</div></div>
+          </div>
+          <div class="field"><div class="field-label">상담 방식 <span class="required">*</span></div><div class="pills">
+            <label class="pill"><input name="method" type="radio" value="전화 상담" checked><span>전화 상담</span></label>
+            <label class="pill"><input name="method" type="radio" value="문자 상담"><span>문자 상담</span></label>
+            <label class="pill"><input name="method" type="radio" value="방문 상담"><span>방문 상담</span></label>
+          </div></div>
+          <div class="info-box">※ 선택하신 날짜와 시간은 <b>희망 일정</b>입니다. 실제 상담·시승 가능 여부는 담당자 회신 후 확정됩니다.</div>
+        </div>
+        <div class="section">
+          <div class="section-head"><span class="section-num">04</span><div><h3 class="section-title">신청자 정보</h3><p class="section-sub">원활한 상담을 위해 최소한의 정보만 입력해 주세요.</p></div></div>
+          <div class="grid2">
+            <div class="field"><label class="field-label" for="clientName">성함 <span class="required">*</span></label><input id="clientName" autocomplete="name" type="text" maxlength="30" placeholder="성함 입력" required></div>
+            <div class="field"><label class="field-label" for="clientPhone">연락처 <span class="required">*</span></label><input id="clientPhone" autocomplete="tel" type="tel" inputmode="tel" maxlength="18" placeholder="010-0000-0000" required></div>
+          </div>
+          <div class="field"><label class="field-label" for="comment">추가 요청사항 (선택)</label><textarea id="comment" maxlength="300" placeholder="원하시는 트림·옵션이나 궁금한 점을 자유롭게 남겨주세요. (300자 이내)"></textarea></div>
+          <label class="consent" for="agree"><input id="agree" type="checkbox" required><span><b>[필수] 개인정보 제공 및 문자 접수 방식에 동의합니다.</b><br>입력한 성함, 연락처, 상담 희망 정보는 휴대전화의 문자 앱으로 전달되어 이재호 상담사(010-4553-0930)에게 직접 전송됩니다. 이 페이지는 해당 정보를 서버에 저장하거나 자동 전송하지 않으며, 실제 문자 발송 시 통신사 및 수신자의 보관·처리 정책이 적용됩니다. 상담 응대 외의 목적으로 사용하지 않도록 안내합니다.</span></label>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit" class="submit"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7" fill="none" aria-hidden="true"><path d="m21 3-8 18-3.4-7.6L2 10l19-7Z"/><path d="m21 3-11.4 10.4"/></svg>문자로 상담 예약 신청하기 <span class="arrow">↗</span></button>
+          <div class="sub-actions"><button type="button" id="copyForm" class="text-btn">예약 내용 복사하기</button><a class="text-btn" href="tel:01045530930">지금 바로 전화하기</a></div>
+          <p class="send-note">버튼을 누르면 문자 앱이 열립니다. <b>문자 앱에서 전송 버튼까지 눌러야 접수됩니다.</b><br>문자 발송에는 가입하신 요금제에 따른 통신료가 발생할 수 있습니다.</p>
+        </div>
+      </form>
+      <aside class="sidebar" aria-label="상담 담당자">
+        <div class="advisor-card">
+          <div class="advisor-label">YOUR PERSONAL ADVISOR</div><div class="advisor-name">이재호 <small>상담사</small></div><p class="advisor-desc">기아 거제대리점<br>차량 구매 1:1 개인 상담</p>
+          <div class="advisor-sep"></div><div class="advisor-line"><svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M22 16.8v3a2 2 0 0 1-2.2 2A19.5 19.5 0 0 1 2.2 4.2 2 2 0 0 1 4.2 2h3A2 2 0 0 1 9 3.6l.8 2.7a2 2 0 0 1-.5 2.1L7.7 10a16 16 0 0 0 6.3 6.3l1.6-1.6a2 2 0 0 1 2.1-.5l2.7.8a2 2 0 0 1 1.6 1.8Z"/></svg><span class="advisor-phone">010-4553-0930</span></div>
+          <a class="call-link" href="tel:01045530930">전화 상담 연결하기 ↗</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <footer class="footer"><div class="container footer-in">
+    <div><div class="footer-brand">Kia <span style="font-size:11px;font-weight:500;letter-spacing:0;color:#a6b1b8;margin-left:6px">개인 상담 서비스</span></div><small><strong>거제대리점 · 이재호</strong><br>상담 전용 연락처 010-4553-0930</small></div>
+    <div class="footer-note"><b>개인 상담 페이지 안내</b><br>본 사이트는 <strong>기아자동차 거제대리점 이재호의 개인 차량 상담용 페이지</strong>입니다. 기아 공식 홈페이지 및 공식 예약 시스템이 아닙니다.<br>차종별 판매·취급 가능 여부와 판매 조건·시승·상담 일정은 담당자 확인 후 안내됩니다.<br><a class="footer-link" href="https://www.kia.com/kr" target="_blank" rel="noopener noreferrer">기아 공식 홈페이지 방문 ↗</a></div>
+  </div></footer>
+  <div id="toast" class="toaster" role="status" aria-live="polite"></div>
+  <div class="mobile-bottom"><a href="tel:01045530930">전화 상담</a><a href="#reservation">문자 예약 신청 ↗</a></div>
+  <div class="modal" id="smsModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true"><div class="modal-dialog">
+    <div class="modal-heading"><span id="modalTitle">문자 예약 내용 확인</span><button type="button" class="close" id="modalClose" aria-label="닫기">×</button></div>
+    <p>아래 내용이 <b>010-4553-0930</b>으로 발송될 문자입니다. '문자 앱 열기'를 선택하고 <b>문자 앱에서 직접 전송</b>해 주세요.</p>
+    <div id="smsPreview" class="msg-preview"></div><div class="modal-actions"><button type="button" id="modalCopy">내용 복사</button><button type="button" id="modalSend">문자 앱 열기 ↗</button></div>
+    <div class="modal-small">PC에서는 문자 앱이 지원되지 않을 수 있습니다. 그럴 때에는 '내용 복사' 후 휴대전화에서 보내주세요. 전송 전까지 예약은 접수되지 않습니다.</div>
+  </div></div>
+  <script>
+    (function(){'use strict';
+      const recipient='01045530930';
+      const $=id=>document.getElementById(id), form=$('consultForm');
+      let smsText='',toastTimeout;
+      const clean=s=>String(s||'').replace(/[\r\n\t]+/g,' ').trim();
+      const phoneFormat=s=>{const digits=s.replace(/\D/g,'');if(digits.length===11&&digits.startsWith('010'))return digits.replace(/(\d{3})(\d{4})(\d{4})/,'$1-$2-$3');return s.trim()};
+      const minDate=()=>{const d=new Date();return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')};
+      $('consultDate').min=minDate();
+      // Consultation hours are plain HTML options, so the dropdown remains usable in file previews.
+      const vehicleCategories=[...document.querySelectorAll('.vehicle-category')];
+      vehicleCategories.forEach(group=>group.addEventListener('toggle',()=>{
+        if(!group.open)return;
+        vehicleCategories.forEach(other=>{if(other!==group)other.open=false});
+        // Switching to another vehicle type clears the previous model selection.
+        const chosen=form.querySelector('input[name="vehicleModel"]:checked');
+        if(chosen&&!group.contains(chosen)){chosen.checked=false;updateSummary()}
+      }));
+      function getModel(){
+        const chosen=form.querySelector('input[name="vehicleModel"]:checked');
+        if(!chosen)return '';
+        return chosen.value==='다른 모델 직접 입력'?clean($('customModel').value):chosen.value;
+      }
+      function selection(name){return form.querySelector('input[name="'+name+'"]:checked')?.value||''}
+      function prettyDate(date,time){if(!date)return'선택 전';const bits=date.split('-');const t=time?(' '+(document.querySelector('#consultTime option:checked')?.textContent||time)) : '';return bits.length===3?bits[0]+'.'+bits[1]+'.'+bits[2]+t:date+t}
+      function updateSummary(){
+        // Only show the selected vehicle beside the chooser; no duplicate reservation summaries.
+        const model=getModel();
+        const selected=$('vehicleSelected');
+        selected.textContent=model?'선택한 차량: '+model:'아직 선택한 차량이 없습니다.';
+        selected.classList.toggle('has-selection',!!model);
+      }
+      function validate(){
+        if(!getModel()){toast('상담받을 차량을 선택해 주세요.');$('vehicleChooser').scrollIntoView({behavior:'smooth',block:'center'});return false}
+        const date=$('consultDate').value;if(!date||date<minDate()){toast('오늘 이후의 상담 희망 날짜를 선택해 주세요.');$('consultDate').focus();return false}
+        if(!$('consultTime').value){toast('상담 희망 시간을 선택해 주세요.');$('consultTime').focus();return false}
+        if(!clean($('clientName').value)){toast('성함을 입력해 주세요.');$('clientName').focus();return false}
+        if(!/^01\d{8,9}$/.test($('clientPhone').value.replace(/\D/g,''))){toast('휴대전화 번호를 정확히 입력해 주세요.');$('clientPhone').focus();return false}
+        if(!$('agree').checked){toast('개인정보 제공 및 문자 접수 방식에 동의해 주세요.');$('agree').focus();return false}
+        return true
+      }
+      function makeMessage(){
+        const data=[
+          '[기아 거제대리점 이재호 · 차량 상담 신청]',
+          '관심 차량: '+getModel(),
+          '상담 목적: '+selection('purpose'),
+          '구매 시기: '+$('purchaseTime').value,
+          '구매 방식: '+$('finance').value,
+          '희망 일정: '+prettyDate($('consultDate').value,$('consultTime').value),
+          '상담 방식: '+selection('method'),
+          '성함: '+clean($('clientName').value),
+          '연락처: '+phoneFormat($('clientPhone').value)
+        ];
+        if(clean($('comment').value))data.push('추가 요청: '+clean($('comment').value));
+        data.push('※ 담당자 회신 후 상담 일정 확정');
+        return data.join('\n');
+      }
+      function toast(message){const node=$('toast');node.textContent=message;node.classList.add('visible');clearTimeout(toastTimeout);toastTimeout=setTimeout(()=>node.classList.remove('visible'),3500)}
+      function showModal(){if(!validate())return;smsText=makeMessage();$('smsPreview').textContent=smsText;$('smsModal').classList.add('visible');$('smsModal').setAttribute('aria-hidden','false');$('modalClose').focus()}
+      function closeModal(){$('smsModal').classList.remove('visible');$('smsModal').setAttribute('aria-hidden','true')}
+      async function copyText(txt){try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(txt)}else{const temp=document.createElement('textarea');temp.value=txt;temp.style.position='fixed';temp.style.opacity='0';document.body.append(temp);temp.select();const done=document.execCommand('copy');temp.remove();if(!done)throw new Error('copy failed')}toast('내용이 복사되었습니다.')}catch(e){toast('복사할 수 없습니다. 문자 내용에서 직접 선택해 주세요.')}}
+      function openSMS(){
+        // iOS SMS URL handling commonly uses &body, while Android and RFC 5724 use ?body.
+        // Compose on the customer's own device; no background delivery occurs.
+        const isiOS=/iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+        const sep=isiOS?'&':'?';
+        const target='sms:'+recipient+sep+'body='+encodeURIComponent(smsText);
+        window.location.href=target;
+        toast('문자 앱에서 전송 버튼을 눌러 신청을 완료해 주세요.');
+      }
+      form.addEventListener('submit',e=>{e.preventDefault();showModal()});
+      $('modalSend').addEventListener('click',openSMS);
+      $('modalCopy').addEventListener('click',()=>copyText(smsText));
+      $('modalClose').addEventListener('click',closeModal);
+      $('smsModal').addEventListener('click',e=>{if(e.target===$('smsModal'))closeModal()});
+      window.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+      $('copyForm').addEventListener('click',()=>{if(validate())copyText(makeMessage())});
+      $('clientPhone').addEventListener('blur',e=>{e.target.value=phoneFormat(e.target.value)});
+      form.addEventListener('change',updateSummary);
+      form.addEventListener('input',updateSummary);
+      $('customModel').addEventListener('focus',()=>{
+        let custom=form.querySelector('.vehicle-category[open] input[value="다른 모델 직접 입력"]');
+        if(!custom){vehicleCategories[0].open=true;custom=vehicleCategories[0].querySelector('input[value="다른 모델 직접 입력"]')}
+        custom.checked=true;updateSummary();
+      });
+      $('customModel').addEventListener('input',updateSummary);
+      function publicUrl(){
+        if(location.protocol!=='https:'&&location.protocol!=='http:')return '';
+        if(['localhost','127.0.0.1','0.0.0.0'].includes(location.hostname))return '';
+        return location.origin+location.pathname;
+      }
+      function introduction(){
+        const url=publicUrl();
+        return '안녕하세요!\n기아 거제대리점 이재호 상담사의 신차 구매 상담을 안내드립니다.\n관심 차종, 견적, 구매 방법과 상담 일정을 간편하게 문의하실 수 있습니다.\n\n'+
+          (url?'상담 예약 링크: '+url+'\n':'')+
+          '상담 문의: 010-4553-0930\n'+
+          '※ 기아 공식 예약 시스템이 아닌 개인 상담용 페이지입니다.';
+      }
+      function shareSms(){
+        const message=introduction();
+        if(!publicUrl())toast('아직 공개 주소가 없어 상담 연락처만 공유됩니다. 링크 공유는 사이트 게시 후 가능합니다.');
+        const isiOS=/iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+        const target='sms:'+(isiOS?'&':'?')+'body='+encodeURIComponent(message);
+        window.location.href=target;
+      }
+      $('shareTop').addEventListener('click',shareSms);
+      updateSummary();
+    })();
+  </script>
+</body>
+</html>
